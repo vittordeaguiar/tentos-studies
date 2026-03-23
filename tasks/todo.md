@@ -38,7 +38,7 @@
 - [x] Inicializar o repositório Git local com branch principal
 - [x] Revisar os arquivos versionados antes do primeiro commit
 - [x] Criar o commit inicial
-- [ ] Criar o repositório publico remoto e enviar o codigo
+- [x] Criar o repositório publico remoto e enviar o codigo
 - [x] Registrar o resultado e validacoes nesta tarefa
 
 ## Review da publicacao
@@ -49,4 +49,6 @@
 - `pnpm build` executado com sucesso apos a correcao
 - `pnpm lint` executado com sucesso
 - O build gerou apenas warning de chunk acima de 500 kB no bundle principal, sem impedir a publicacao
-- A criacao do repositório publico remoto permanece pendente de reautenticacao no GitHub CLI (`gh auth status` indicou token invalido)
+- O remoto `origin` foi configurado manualmente para `https://github.com/vittordeaguiar/tentos-studies.git`
+- `git push -u origin main` executado com sucesso
+- Assumicao usada: o owner do repositório criado por `gh repo create tentos-studies --public` era `vittordeaguiar`; a suposicao estava correta
